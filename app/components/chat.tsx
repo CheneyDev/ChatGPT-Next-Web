@@ -1068,10 +1068,11 @@ function _Chat() {
           <div
             className={`window-header-main-title ${styles["chat-body-main-title"]}`}
             onClickCapture={() => setIsEditingMessage(true)}
+            style={{ display: "none" }}
           >
             {!session.topic ? DEFAULT_TOPIC : session.topic}
           </div>
-          <div className="window-header-sub-title">
+          <div className="window-header-sub-title" style={{ display: "none" }}>
             {Locale.Chat.SubTitle(session.messages.length)}
           </div>
         </div>
